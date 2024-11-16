@@ -5,6 +5,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Register from "../Register/Register";
 import JoinPlan from "../JoinPlan/JoinPlan";
+import CreatePlan from '../CreatePlan/CreatePlan';
 import DishPicker from "../DishPicker/DishPicker";
 import Review from "../Review/Review";
 import Home from "../Home/Home"
@@ -31,8 +32,36 @@ function App() {
           }
           />
           <Route 
+            path="/home/create-plan"
+            element={
+              <ProtectedRoute>
+                <CreatePlan />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
+            path="/home/pick-your-dish"
+            element={
+              <ProtectedRoute>
+                <DishPicker />
+              </ProtectedRoute>
+            }  
+          />
+          <Route 
+            path="/home/review" 
+            element={
+              <ProtectedRoute>
+                <Review />
+              </ProtectedRoute>
+            } 
+          />
+          <Route 
             path="/register"
             element={<Register />}
+          />
+          <Route 
+            path="/login"
+            element={<JoinPlan />}
           />
           <Route
             path="*"
