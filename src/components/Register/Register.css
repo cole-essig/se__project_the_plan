@@ -1,0 +1,12 @@
+.register {
+  max-width: 60vw;
+  height: 60vh;
+  width: 100%;
+  margin: auto;
+  background-color: black;
+}
+
+.register__title {
+  color: #fff;
+  font-size: 40px;
+}
