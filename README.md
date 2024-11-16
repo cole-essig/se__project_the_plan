@@ -1,2 +1,8 @@
-# se__project_the_plan
-An anonymous Turkey day planner to help sort through who's bringing what to the big day. Focus more on what you're thankful for and less on if Aunt carol is bringing her 'famous' cranberry sauce again.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
