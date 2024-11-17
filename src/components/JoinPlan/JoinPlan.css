@@ -1,0 +1,67 @@
+.joinPlan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    height: 60vh;
+    width: 100%;
+    margin: auto;
+    background-color: #f8b12c;
+    border-radius: 15px;
+  }
+  
+  .joinPlan__title {
+    color: #fff;
+    font-size: 40px;
+    margin: 15px auto;
+  }
+  
+  .joinPlan__form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .joinPlan__label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2; 
+    margin: 24px 0 0 25px;
+  }
+  
+  .joinPlan__input {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    border-bottom: solid 1px #000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+  
+  .joinPlan__buttons {
+   margin: 40px auto 0;
+  }
+  
+  .joinPlan__submit-button {
+   margin-right: 10px;
+   background: transparent;
+   border: none;
+   cursor: pointer;
+   font-size: 22px;
+   line-height: 1.2;
+   font-weight: 600;
+  }
+  
+  .joinPlan__switch-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
