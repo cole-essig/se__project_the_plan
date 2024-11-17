@@ -21,7 +21,7 @@ function App() {
   return ( 
     <div className='page'>
      <div className="page__content">
-      <AppContext.Provider value={isLoggedIn} >
+     <AppContext.Provider value={isLoggedIn} >
         <Routes>
           <Route
             path="/home"
