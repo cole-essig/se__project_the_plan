@@ -1,0 +1,18 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.home__title {
+  color: #fff;
+  font-size: 40px;
+  margin: 15px auto;
+}
+
+.home__create-meal-button {
+    max-width: 100px;
+    margin: 0 auto;
+    background: transparent;
+    cursor: pointer;
+}

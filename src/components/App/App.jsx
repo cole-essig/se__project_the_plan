@@ -14,7 +14,7 @@ import AppContext from '../../context/AppContext';
 import './App.css'
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -26,7 +26,7 @@ function App() {
           <Route
             path="/home"
             element={
-            <ProtectedRoute>
+            <ProtectedRoute anonymous>
               <Home />
             </ProtectedRoute>
           }
@@ -34,7 +34,7 @@ function App() {
           <Route 
             path="/home/create-plan"
             element={
-              <ProtectedRoute>
+              <ProtectedRoute anonymous>
                 <CreatePlan />
               </ProtectedRoute>
             } 
@@ -42,7 +42,7 @@ function App() {
           <Route 
             path="/home/pick-your-dish"
             element={
-              <ProtectedRoute>
+              <ProtectedRoute anonymous>
                 <DishPicker />
               </ProtectedRoute>
             }  
@@ -50,7 +50,7 @@ function App() {
           <Route 
             path="/home/review" 
             element={
-              <ProtectedRoute>
+              <ProtectedRoute anonymous>
                 <Review />
               </ProtectedRoute>
             } 
