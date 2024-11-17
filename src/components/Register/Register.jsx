@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import Nav from "../Nav/Nav"
 import "./Register.css";
 
 function Register() {
@@ -15,6 +17,7 @@ const [name, setName] = useState('');
   return (
     <div className="register"> 
       <h2 className="register__title">Sign Up</h2>
+      <Nav />
       <div className="register__form">
       <label htmlFor='name' className='register__label'>
                 Name{" "}
@@ -41,7 +44,9 @@ const [name, setName] = useState('');
       </div>
       <div className='register__buttons'>
             <button type='submit' className="register__submit-button">Create Plan</button>
-            <button className="register__switch-button">Join Dinner</button>
+            <Link to='/login'>
+              <button className="register__switch-button">Join Dinner</button>
+            </Link>
       </div>
     </div>
   )
