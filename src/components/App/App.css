@@ -3,7 +3,7 @@
     width: 90vw;
     min-height: 100vh;
     display: flex;
-    background-color: #9D221E;
+    background: linear-gradient(180deg, #D24125, #F78A42);
 }
 
 .page__content {
@@ -12,5 +12,6 @@
     min-height: 90%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ed732e;
+    background: linear-gradient(180deg, #D24125, #F78A42);
+    /* background-color: #ed732e; */
 }

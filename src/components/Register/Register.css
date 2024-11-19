@@ -2,10 +2,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 50vw;
-  height: 60vh;
+  max-width: 600px;
+  height: 300px;
   width: 100%;
-  margin: auto;
+  margin: 60px auto 0;
   background-color: #f8b12c;
   border-radius: 15px;
 }

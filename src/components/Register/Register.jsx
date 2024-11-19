@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Nav from "../Nav/Nav"
+import Footer from "../Footer/Footer";
 import "./Register.css";
 
 function Register() {
@@ -17,7 +17,6 @@ const [name, setName] = useState('');
   return (
     <div className="register"> 
       <h2 className="register__title">Create Dinner Plans</h2>
-      <Nav />
       <div className="register__form">
       <label htmlFor='name' className='register__label'>
                 Name{" "}
@@ -48,6 +47,7 @@ const [name, setName] = useState('');
               <button className="register__switch-button">Join Dinner Instead</button>
             </Link>
       </div>
+      <Footer />
     </div>
   )
 }
