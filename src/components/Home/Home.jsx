@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import TopDish from "../TopDish/TopDish";
 import Footer from "../Footer/Footer"
+import AddDishForm from "../AddDishForm/AddDishForm";
 import "./Home.css";
 
 function Home() {
