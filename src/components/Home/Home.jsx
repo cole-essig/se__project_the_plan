@@ -6,18 +6,21 @@ import AddDishForm from "../AddDishForm/AddDishForm";
 import "./Home.css";
 import dinner from "../../assets/img/ThanksGiving_dinner.png";
 import recipes from "../../assets/img/ThanksGiving_recipes.png";
-import shelf from "../../assets/img/ThanksGiving_shelf.png";
+// import shelf from "../../assets/img/ThanksGiving_shelf.png";
 import Recipes from "../../assets/img/ThanksGiving_button-Re.png";
+import bench from "../../assets/img/BENCH.svg";
+import information from "../../assets/img/ThanksGiving_button-information.png";
 import { Nav } from "react-bootstrap";
 
 function Home() {
   const onClick = () => {
     console.log("hey");
-
-    // const handleClick = () => {
-    //   alert("Styled image button clicked!");
-    // };
   };
+
+  const handleClick = () => {
+    console.log("Styled image button clicked!");
+  };
+
   return (
     <div className="home">
       <nav className="nav">
@@ -25,7 +28,7 @@ function Home() {
           <li>
             <Nav
               to="/home"
-              className="nav-link"
+              className="nav__link"
               activeClassName="Home__active-link"
               exact
             >
@@ -35,7 +38,7 @@ function Home() {
           <li>
             <Nav
               to="/about"
-              className="nav-link"
+              className="nav__link"
               activeClassName="Home__active-link"
             >
               About
@@ -44,7 +47,7 @@ function Home() {
           <li>
             <Nav
               to="/contact"
-              className="nav-link"
+              className="nav__link"
               activeClassName="Home__active-link"
             >
               create contact
@@ -53,7 +56,7 @@ function Home() {
           <li>
             <Nav
               to="/contact"
-              className="nav-link"
+              className="nav__link"
               activeClassName="Home__active-link"
             >
               login
@@ -70,20 +73,26 @@ function Home() {
           <img
             src={recipes}
             alt="my__recipes"
-            className="home__myrecipe"
+            className="home__button-myrecipe"
             onClick={onClick}
           />
         </ul>
       </nav>
       <div className="home__middle">
-        <ul className="home__items">
+        <div className="home__items">
           <img src={dinner} alt="food" className="home__food" />
-          <img src={shelf} alt="shelf" className="home__shelf" />
-        </ul>
+          <img src={bench} alt="shelf" className="home__shelf" />
+        </div>
         <div className="home__text">
           <h3 className="home__header">THANKSGIVING DAY</h3>
           <span className="home__thanks">THANKS</span>
           <span className="home__giving">GIVING</span>
+          <img
+            src={information}
+            alt="ReadMe"
+            className="home__button-information"
+            handleClick={handleClick}
+          />
         </div>
       </div>
       {/* <TopDish /> */}

@@ -16,13 +16,17 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 220px;
+  margin-top: 22px;
   gap: 10px;
 }
 
 .home__middle {
   display: flex;
   justify-content: space-between;
+  height: 100%; /* Optional: Ensure it fills the available space */
+  width: 100%; /* Optional: Ensure it spans full width */
+  position: relative; /* Ensures alignment context */
+  align-items: center;
 }
 
 .home__thanks,
@@ -40,6 +44,10 @@
   height: 60px;
 }
 
+.home__button-information {
+  cursor: pointer;
+}
+
 .home__myrecipe {
   /* margin: 20px 10px 0px 0px; */
   width: 87px;
@@ -48,6 +56,7 @@
 
 .home__items {
   align-content: center;
+  margin-top: 80px;
 }
 .home__food {
   width: 827px;
@@ -56,11 +65,13 @@
 
 .home__shelf {
   width: 787px;
-  height: 187px;
-  background: linear-gradient(180deg, #d24125, #f78a42),
-    url("../../assets//img/Thanksgiving_shelf.png") no-repeat center/cover;
+  height: 200px;
+  /* background: linear-gradient(180deg, #d24125, #f78a42),
+    url("../../assets//img/Thanksgiving_shelf.png") no-repeat center/cover; */
   background-blend-mode: overlay;
   border: none;
+  align-content: center;
+  margin-top: -42px;
 }
 
 .home__nav-recipes {
@@ -79,4 +90,15 @@
   /* margin: 22px 34px 0px; */
   display: flex;
   gap: 91px;
+  gap: 120px;
+  margin-left: 90px;
+}
+
+.nav__link {
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: #fff;
+  z-index: 1;
 }
