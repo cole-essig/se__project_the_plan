@@ -8,10 +8,10 @@ const [isClickedCE, setIsClickedCE] = useState(false);
 const [isClickedBJ, setIsClickedBJ] = useState(false);
 
 const onClickCe = () => {
-  setIsClickedCE(true)
+  setIsClickedCE(!isClickedCE)
 }
 const onClickBj = () => {
-    setIsClickedBJ(true)
+    setIsClickedBJ(!isClickedBJ)
   }
 
   return (
@@ -31,11 +31,17 @@ const onClickBj = () => {
           <p className="footer__navigation">Github</p>
         </Link>
       </div>
-      <div className={`"footer__popup_cole" ${isClickedCE ? "footer__popup_open" : ""}`}>
-        <p>Wassap!</p>
+      <div className={`footer__popup_cole ${isClickedCE ? "footer__popup_open" : ""}`}>
+        <img src="src\assets\headshot-cole.png" alt="Image of Creator Cole" className="footer__picture"/>
+        <Link className="footer__link" to='https://github.com/cole-essig'>
+          <p className="footer__popup-text">Check me out</p>
+        </Link>
       </div>
-      <div className={`"footer__popup_bj" ${isClickedBJ ? "footer__popup_open" : ""}`}>
-        <p>Wassuuup!!</p>
+      <div className={`footer__popup_bj  ${isClickedBJ ? "footer__popup_open" : ""}`}>
+      <img src="src\assets\headshot-bj.png" alt="Image of Creator Cole" className="footer__picture"/>
+        <Link className="footer__link" to='https://github.com/bjthe4'>
+          <p className="footer__popup-text">Check me out</p>
+        </Link>
       </div>
       <div className="footer__person_icons">
         <button className="footer__person" onClick={onClickCe}>CE</button>

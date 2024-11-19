@@ -16,6 +16,7 @@ const [name, setName] = useState('');
   
   return (
     <div className="register"> 
+      <div className="register__section">
       <h2 className="register__title">Create Dinner Plans</h2>
       <div className="register__form">
       <label htmlFor='name' className='register__label'>
@@ -46,6 +47,7 @@ const [name, setName] = useState('');
             <Link to='/login'>
               <button className="register__switch-button">Join Dinner Instead</button>
             </Link>
+      </div>
       </div>
       <Footer />
     </div>

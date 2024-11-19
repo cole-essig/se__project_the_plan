@@ -1,4 +1,8 @@
 .register {
+  min-height: 100%;
+}
+
+.register__section {
   position: relative;
   display: flex;
   flex-direction: column;

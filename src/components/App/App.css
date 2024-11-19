@@ -11,7 +11,5 @@
     width: calc(100% - 75px);
     min-height: 90%;
     margin: 20px auto;
-    padding: 20px;
-    background: linear-gradient(180deg, #D24125, #F78A42);
-    /* background-color: #ed732e; */
+    padding: 60px;
 }
