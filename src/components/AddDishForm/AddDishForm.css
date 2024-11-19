@@ -1,3 +1,14 @@
+.addDish {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  height: 200px;
+  width: 100%;
+  margin: 10px auto 0;
+  background-color: #f8b12c;
+  border-radius: 15px;
+}
+
 .addDish__form {
     display: flex;
     flex-direction: column;
@@ -7,7 +18,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2; 
-    margin: 24px 0 0 25px;
+    margin: 8px 0 0 25px;
   }
   
   .addDish__input {
@@ -24,3 +35,19 @@
     overflow: hidden;
     text-overflow: clip;
   }
+
+.addDish__button {
+ max-width: 100px;
+ width: 100%;
+ margin: 20px auto 0;
+ background: transparent;
+ border: none;
+ cursor: pointer;
+ font-size: 22px;
+ line-height: 1.2;
+ font-weight: 600;
+}
+
+.addDish__button:hover {
+  box-shadow: 4px 0px 8px red;
+}
