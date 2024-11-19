@@ -1,0 +1,82 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.home__header {
+  color: #fff;
+  font-size: 30px;
+  /* margin: 170px auto; */
+  align-items: right;
+}
+
+.home__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 220px;
+  gap: 10px;
+}
+
+.home__middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__thanks,
+.home__giving {
+  font-size: 95px; /* Larger font size for "THANKS" and "GIVING" */
+  font-weight: 700; /* Bold font weight */
+  color: #000; /* Black color */
+}
+
+.home__button-recipe {
+  /* margin: 20px 10px 0px 0px; */
+  cursor: pointer;
+  background-color: #af2000;
+  width: 190px;
+  height: 60px;
+}
+
+.home__myrecipe {
+  /* margin: 20px 10px 0px 0px; */
+  width: 87px;
+  height: 77px;
+}
+
+.home__items {
+  align-content: center;
+}
+.home__food {
+  width: 827px;
+  height: 501px;
+}
+
+.home__shelf {
+  width: 787px;
+  height: 187px;
+  background: linear-gradient(180deg, #d24125, #f78a42),
+    url("../../assets//img/Thanksgiving_shelf.png") no-repeat center/cover;
+  background-blend-mode: overlay;
+  border: none;
+}
+
+.home__nav-recipes {
+  gap: 35px;
+  display: flex;
+  margin: 0px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0px;
+  /* margin: 22px 34px 0px; */
+  display: flex;
+  gap: 91px;
+}
