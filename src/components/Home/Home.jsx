@@ -31,26 +31,17 @@ function Home() {
       <nav className="nav">
         <ul className="nav__links">
           <li>
-            <Link
-              to="/home"
-              className="nav__link"
-            >
+            <Link to="/home" className="nav__link">
               Home
             </Link>
           </li>
           <li>
-            <Link
-              to="/home/about"
-              className="nav__link"
-            >
+            <Link to="/home/about" className="nav__link">
               About
             </Link>
           </li>
           <li>
-            <Link
-              to="/home/recipes"
-              className="nav__link"
-            >
+            <Link to="/home/recipes" className="nav__link">
               Recipes
             </Link>
           </li>
@@ -60,7 +51,7 @@ function Home() {
             src={Recipes}
             alt="Recipe"
             className="home__button-recipe"
-            onClick={onClick}
+            // onClick={onClick}
           />
           <img
             src={recipes}
