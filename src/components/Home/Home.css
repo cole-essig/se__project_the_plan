@@ -52,10 +52,12 @@
   background-color: #af2000;
   width: 190px;
   height: 60px;
+  border-radius: 15px;
 }
 
 .home__button-information {
   cursor: pointer;
+  border-radius: 15px;
 }
 
 .home__nutton-myrecipe {
@@ -129,7 +131,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .home__items {
     margin-top: 20px;
     margin-left: -35px;
@@ -195,4 +197,4 @@
     display: flex;
     flex-wrap: wrap;
   }
-}
+} */
