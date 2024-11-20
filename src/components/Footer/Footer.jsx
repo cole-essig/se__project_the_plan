@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/logo.svg"
 import "./Footer.css";
 
 function Footer() {
@@ -17,7 +18,7 @@ const onClickBj = () => {
   return (
     <div className="footer">
         <div className="footer__head">
-          <img src="src\assets\logo.svg" alt="turkey logo" className="footer__logo" />
+          <img src={Logo} alt="turkey logo" className="footer__logo" />
           <h2 className="footer__title">Solus Aedifi</h2>
         </div>
       <div className="footer__links">
