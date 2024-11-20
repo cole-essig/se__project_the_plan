@@ -15,7 +15,7 @@ import { Nav } from "react-bootstrap";
 
 function Home() {
   const onClick = () => {
-    console.log("brodie");
+    console.log("hello");
   };
 
   // const handleClick = () => {
