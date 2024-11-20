@@ -5,12 +5,13 @@ import Register from "../Register/Register";
 import JoinPlan from "../JoinPlan/JoinPlan";
 import CreatePlan from '../CreatePlan/CreatePlan';
 import Home from "../Home/Home"
+import About from "../About/About"
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute"
 import AppContext from '../../context/AppContext';
 import './App.css'
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -22,26 +23,32 @@ function App() {
           <Route
             path="/home"
             element={
-            <ProtectedRoute anonymous>
               <Home />
+          }
+          />
+          <Route 
+            path="/home/recipes"
+            element={<CreatePlan />} 
+          />
+          <Route
+            path='/home/about'
+            element={<About />}
+          />
+          <Route 
+            path="/register"
+            element={
+            <ProtectedRoute anonymous >
+              <Register />
             </ProtectedRoute>
           }
           />
           <Route 
-            path="/home/create-plan"
-            element={
-              <ProtectedRoute anonymous>
-                <CreatePlan />
-              </ProtectedRoute>
-            } 
-          />
-          <Route 
-            path="/register"
-            element={<Register />}
-          />
-          <Route 
             path="/login"
-            element={<JoinPlan />}
+            element={
+            <ProtectedRoute anonymous >
+              <JoinPlan />
+            </ProtectedRoute>
+          }
           />
           <Route
             path="*"
@@ -49,7 +56,7 @@ function App() {
               isLoggedIn ? (
                 <Navigate to="/home" replace />
               ) : (
-                <Navigate to="/register" replace />
+                <Navigate to="/home" replace />
               )
             }
           />

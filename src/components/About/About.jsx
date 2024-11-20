@@ -14,6 +14,7 @@ function About() {
             We even provide links to delicious recipes, so you can plan ahead and make sure every dish is a hit.
             In the future, we’re excited to offer custom logins, personalized tracking, anonymous dish reviews after the celebration, 
             and even a calorie tracker for those mindful of their intake. Let us help you make your Thanksgiving memorable and stress-free!
+            Check out the creators in the the footer below!
         </p>
       </div>
       <Footer />
