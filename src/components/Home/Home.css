@@ -40,7 +40,8 @@
 }
 
 .home__thanks,
-.home__giving {
+.home__giving,
+.home__happy {
   font-size: 95px;
   font-weight: 700;
   color: #000;
@@ -135,7 +136,8 @@
     margin-left: -35px;
   }
   .home__thanks,
-  .home__giving {
+  .home__giving,
+  .home__happy {
     font-size: 40px;
   }
 

@@ -68,7 +68,8 @@ function Home() {
           <img src={bench} alt="shelf" className="home__shelf" />
         </div>
         <div className="home__text">
-          <h3 className="home__header">THANKSGIVING DAY</h3>
+          <h3 className="home__header">THE RECIPE OF THANKS</h3>
+          <span className="home__happy">HAPPY</span>
           <span className="home__thanks">THANKS</span>
           <span className="home__giving">GIVING</span>
           <img

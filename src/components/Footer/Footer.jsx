@@ -74,7 +74,7 @@ function Footer() {
         </button>
       </div>
       <div className="footer__copyright_box">
-        <p className="footer__copyright">© 2024 Thanks Giving </p>
+        <p className="footer__copyright">© 2024 The Recipe Of Thanks </p>
       </div>
     </div>
   );

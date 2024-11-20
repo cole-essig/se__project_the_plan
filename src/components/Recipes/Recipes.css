@@ -1,96 +1,101 @@
 .recipes {
-    margin: 0 auto 0;
-    display: flex;
-    flex-direction: row;
-    max-width: 80vw;
-    width: 100%;
+  margin: 0 auto 0;
+  display: flex;
+  flex-direction: row;
+  max-width: 80vw;
+  width: 100%;
 }
 
 .recipes__content {
-   margin-left: 5px; 
+  margin-left: 5px;
 }
 
 .recipes__header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .recipes__title {
-    margin: 30px auto 25px;
-    font-size: 34px;
-    font-weight: 600;
+  margin: 30px auto 25px;
+  font-size: 34px;
+  font-weight: 600;
 }
 
 .recipes__button {
-    margin: 0;
-    max-width: 250px;
-    height: 50px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 22px;
-    line-height: 1.2;
-    font-weight: 600;
+  margin: 0;
+  max-width: 250px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
 }
 
 .recipes__button:hover {
-    box-shadow: 5px 1px 10px 8px #fff;
+  box-shadow: 5px 1px 10px 8px #fff;
 }
 
 .recipes__cards_list {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    gap: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.recipe__chef {
+  height: 200px;
+  width: 200px;
+  margin-left: 1000px;
 }
 
 @media screen and (max-width: 700px) {
-    .recipes__header {
-        flex-direction: column;
-    }
+  .recipes__header {
+    flex-direction: column;
+  }
 
-    .recipes__title {
-        margin: 30px auto 5px;
-    }
+  .recipes__title {
+    margin: 30px auto 5px;
+  }
 
-    .recipes__button {
-        margin: 0 auto 15px;
-    }
+  .recipes__button {
+    margin: 0 auto 15px;
+  }
 
-    .recipes__cards_list {
-        gap: 20px;
-    }
+  .recipes__cards_list {
+    gap: 20px;
+  }
 
-    .recipes__title {
-        font-size: 28px;
-    }
+  .recipes__title {
+    font-size: 28px;
+  }
 
-    .recipes__button {
-        font-size: 18px;
-    }
+  .recipes__button {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 570px) {
-    .recipes__content {
-        max-width: 160px;
-        margin: 0 auto 0 10px;
-    }
+  .recipes__content {
+    max-width: 160px;
+    margin: 0 auto 0 10px;
+  }
 }
 
 @media screen and (max-width: 370px) {
-    .recipes__content {
-        max-width: 125px;
-        margin: 0 auto 0 5px;
-    }
+  .recipes__content {
+    max-width: 125px;
+    margin: 0 auto 0 5px;
+  }
 
-    .recipes__title {
-        margin: 30px auto 5px;
-        text-align: center
-        ;
-    }
+  .recipes__title {
+    margin: 30px auto 5px;
+    text-align: center;
+  }
 }
