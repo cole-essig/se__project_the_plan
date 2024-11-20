@@ -1,12 +1,13 @@
 import React from "react";
 import Footer from "../Footer/Footer";
+import HomeB from '../../assets/img/log-cabin.svg'
 import "./About.css"
 
 function About() {
   return (
     <div className="about">
       <Link to="/home" className="about__home-link">
-        <image alt="home icon" className="about__home-image" />
+        <image src={HomeB} alt="home icon" className="about__home-image" />
       </Link>
       <div className="about__content">
         <h2 className="about__title">About This Project</h2>

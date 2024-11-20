@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import AddDishForm from "../AddDishFormModal/AddDishFormModal";
 import Recipes from "../Recipes/Recipes";
 import Footer from "../Footer/Footer";
+import HomeB from '../../assets/img/log-cabin.svg'
 import { startingRecipes } from "../../utils/constants"
 import "./CreatePlan.css";
 
@@ -34,7 +35,7 @@ function CreatePlan() {
 return (
     <div className="createPlans">
       <Link to="/home" className="createPlans__home-link">
-        <image alt="home icon" className="createPlans__home-image" />
+        <image src={HomeB} alt="home icon" className="createPlans__home-image" />
       </Link>
       <Recipes recipeList={recipeList} cardDelete={cardDelete} handleAddClick={handleAddClick} />
       <Footer />
