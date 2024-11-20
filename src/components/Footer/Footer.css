@@ -43,7 +43,7 @@
 }
 
 .footer__navigation:hover {
-  box-shadow: 4px 0px 8px red;
+  box-shadow: 4px 0px 8px #fff;
 }
 
 .footer__person_icons {
@@ -61,7 +61,7 @@
 }
 
 .footer__person:hover {
-  box-shadow: 4px 0px 8px red;
+  box-shadow: 4px 0px 8px #fff;
 }
 
 .footer__popup_cole {
@@ -109,7 +109,7 @@
 }
 
 .footer__popup-text:hover {
-  box-shadow: 4px 0px 8px red;
+  box-shadow: 4px 0px 8px #fff;
 }
 
 .footer__popup_open {
