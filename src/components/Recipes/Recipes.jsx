@@ -7,7 +7,7 @@ function Recipes({ recipeList, cardDelete, handleAddClick }) {
 return (
     <div className="recipes">
         <SideBar />
-        <div>
+        <div className="recipes__content">
             <div className="recipes__header">
                 <p className="recipes__title">Your Recipes</p>
                 <button className="recipes__button" type="button" onClick={handleAddClick}>Add New Recipe+</button>
