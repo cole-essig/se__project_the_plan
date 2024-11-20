@@ -128,3 +128,71 @@
     transform: scale(1.2) rotate(-90deg);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .home__items {
+    margin-top: 20px;
+    margin-left: -35px;
+  }
+  .home__thanks,
+  .home__giving {
+    font-size: 40px;
+  }
+
+  .home__food,
+  .home__shelf {
+    width: 200px;
+    gap: 10px;
+  }
+
+  .home__food {
+    height: 200px;
+  }
+
+  .home__shelf {
+    margin-top: -85px;
+  }
+  .nav__links {
+    margin-left: 0px;
+    gap: 30px;
+  }
+
+  .home__button-myrecipe {
+    height: 40px;
+  }
+  .home__button-recipe {
+    width: 100px;
+    height: 30px;
+  }
+  .home__arrow {
+    margin-right: 0;
+    margin-top: 70px;
+  }
+
+  .home__header {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .home__shelf,
+  .home__food {
+    width: 300px;
+    height: 300px;
+  }
+  .home__shelf {
+    margin-top: -127px;
+  }
+}
+
+@media screen and (min-wdith: 550px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .home__middle {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
