@@ -17,7 +17,7 @@
 .homeheader {
   color: #fff;
   font-size: 30px;
-  margin: 170px auto; 
+  margin: 170px auto;
   align-items: right;
 }
 
@@ -33,17 +33,17 @@
 .homemiddle {
   display: flex;
   justify-content: space-between;
-  height: 100%; 
-  width: 100%; 
-  position: relative; 
+  height: 100%;
+  width: 100%;
+  position: relative;
   align-items: center;
 }
 
 .homethanks,
 .homegiving {
-  font-size: 95px; 
-  font-weight: 700; 
-  color: #000; 
+  font-size: 95px;
+  font-weight: 700;
+  color: #000;
 }
 
 .home__button-recipe {
@@ -59,7 +59,7 @@
 }
 
 .homemyrecipe {
-  margin: 20px 10px 0px 0px; 
+  margin: 20px 10px 0px 0px;
   width: 87px;
   height: 77px;
 }
@@ -76,9 +76,6 @@
 .home__shelf {
   width: 787px;
   height: 200px;
-  background: linear-gradient(180deg, #d24125, #f78a42),
-    url("../../assets//img/Thanksgiving_shelf.png") no-repeat center/cover;
-  background-blend-mode: overlay;
   border: none;
   align-content: center;
   margin-top: -42px;
