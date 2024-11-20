@@ -40,7 +40,7 @@ function Home() {
           </li>
           <li>
             <Link
-              to="/about"
+              to="/home/about"
               className="navlink"
             >
               About
@@ -48,18 +48,10 @@ function Home() {
           </li>
           <li>
             <Link
-              to="/contact"
+              to="/home/recipes"
               className="navlink"
             >
-              Register
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              className="navlink"
-            >
-              login
+              Recipes
             </Link>
           </li>
         </ul>
