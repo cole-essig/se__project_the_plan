@@ -1,13 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
-import HomeB from '../../assets/img/log-cabin.svg'
+import HomeButton from "../../assets/img/log-cabin.svg";
 import "./About.css"
 
 function About() {
   return (
     <div className="about">
-      <Link to="/home" className="about__home-link">
-        <image src={HomeB} alt="home icon" className="about__home-image" />
+      <Link
+        to="/home"
+        className="about__link"
+      >
+        <img src={HomeButton} alt="Home button" className="about__home-image"/>      
       </Link>
       <div className="about__content">
         <h2 className="about__title">About This Project</h2>

@@ -25,7 +25,7 @@ const onClickBj = () => {
         <Link className="footer__link"  to="/home">
           <p className="footer__navigation">Home</p>
         </Link>
-        <Link className="footer__link" to="/home/about-us">
+        <Link className="footer__link" to="/home/about">
           <p className="footer__navigation">About Us</p>
         </Link>
         <Link className="footer__link" to="https://github.com/cole-essig/se__project_the_plan">

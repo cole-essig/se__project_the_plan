@@ -4,14 +4,25 @@
     flex-direction: column;
 }
 
-.about__home-link {
-  position: absolute;
+.about__link {
+  cursor: pointer;
+  text-decoration: none;
+  width: 75px;
+  min-height: 75px;
+}
+
+.about__link:hover {
+  box-shadow:  0 5px 5px #fff;
 }
 
 .about__home-image {
-  max-width: 75px;
-  width: 100%;
+  width: 75px;
   min-height: 75px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .about__title {
