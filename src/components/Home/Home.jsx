@@ -36,18 +36,13 @@ function Home() {
             </Link>
           </li>
           <li>
-            <Link to="/about" className="nav__link">
+            <Link to="/home/about" className="nav__link">
               About
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="nav__link">
-              Register
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" className="nav__link">
-              login
+            <Link to="/home/recipes" className="nav__link">
+              Recipes
             </Link>
           </li>
         </ul>

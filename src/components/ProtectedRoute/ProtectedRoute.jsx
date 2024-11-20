@@ -12,7 +12,7 @@ function ProtectedRoute({ children, anonymous = false, }) {
     }
 
     if (!isLoggedIn && !anonymous) {
-        return <Navigate to="/register" state={{ from: location }} />
+        return <Navigate to="/home" state={{ from: location }} />
     }
     return children;
 }

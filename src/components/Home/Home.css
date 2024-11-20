@@ -41,9 +41,9 @@
 
 .home__thanks,
 .home__giving {
-  font-size: 95px; /* Larger font size for "THANKS" and "GIVING" */
-  font-weight: 700; /* Bold font weight */
-  color: #000; /* Black color */
+  font-size: 95px;
+  font-weight: 700;
+  color: #000;
 }
 
 .home__button-recipe {
@@ -58,8 +58,8 @@
   cursor: pointer;
 }
 
-.home__myrecipe {
-  /* margin: 20px 10px 0px 0px; */
+.home__nutton-myrecipe {
+  margin: 20px 10px 0px 0px;
   width: 87px;
   height: 77px;
 }

@@ -23,7 +23,6 @@ function AddDishForm({ onAddItem, handleModalClose, isOpen }) {
             return;
         }
         onAddItem({ dish, serving, link });
-        console.log("hey");
     }
 
     return (
