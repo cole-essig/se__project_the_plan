@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import TopDish from "../TopDish/TopDish";
 import Footer from "../Footer/Footer";
-import AddDishForm from "../AddDishForm/AddDishForm";
 import "./Home.css";
 import dinner from "../../assets/img/ThanksGiving_dinner.png";
 import recipes from "../../assets/img/ThanksGiving_recipes.png";
@@ -11,11 +9,11 @@ import Recipes from "../../assets/img/ThanksGiving_button-Re.png";
 import bench from "../../assets/img/BENCH.svg";
 import information from "../../assets/img/ThanksGiving_button-information.png";
 import arrow from "../../assets/img/arrow.svg";
-import { Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Home() {
   const onClick = () => {
-    console.log("hello");
+    console.log("Jelloo");
   };
 
   // const handleClick = () => {
@@ -33,72 +31,67 @@ function Home() {
       <nav className="nav">
         <ul className="nav-links">
           <li>
-            <Nav
+            <Link
               to="/home"
-              className="nav__link"
-              activeClassName="Home__active-link"
-              exact
+              className="navlink"
             >
               Home
-            </Nav>
+            </Link>
           </li>
           <li>
-            <Nav
+            <Link
               to="/about"
-              className="nav__link"
-              activeClassName="Home__active-link"
+              className="navlink"
             >
               About
-            </Nav>
+            </Link>
           </li>
           <li>
-            <Nav
+            <Link
               to="/contact"
-              className="nav__link"
-              activeClassName="Home__active-link"
+              className="navlink"
             >
-              register
-            </Nav>
+              Register
+            </Link>
           </li>
           <li>
-            <Nav
+            <Link
               to="/contact"
-              className="nav__link"
-              activeClassName="Home__active-link"
+              className="navlink"
             >
               login
-            </Nav>
+            </Link>
           </li>
         </ul>
-        <ul className="home__nav-recipes">
+        <ul className="homenav-recipes">
           <img
             src={Recipes}
             alt="Recipe"
-            className="home__button-recipe"
+            className="homebutton-recipe"
             onClick={onClick}
           />
           <img
             src={recipes}
-            alt="my__recipes"
-            className="home__button-myrecipe"
+            alt="myrecipes"
+            className="homebutton-myrecipe"
             // onClick={onClick}
           />
         </ul>
       </nav>
-      <div className="home__middle">
-        <img src={arrow} alt="arrow" className="home__arrow" />
-        <div className="home__items">
-          <img src={dinner} alt="food" className="home__food" />
-          <img src={bench} alt="shelf" className="home__shelf" />
+      <div className="homemiddle">
+        <img src={arrow} alt="arrow" className="homearrow" />
+        <div className="homeitems">
+          <img src={dinner} alt="food" className="homefood" />
+          <img src={bench} alt="shelf" className="homeshelf" />
         </div>
-        <div className="home__text">
-          <h3 className="home__header">THANKSGIVING DAY</h3>
-          <span className="home__thanks">THANKS</span>
-          <span className="home__giving">GIVING</span>
+        <div className="hometext">
+          <h3 className="homeheader">THANKSGIVING DAY</h3>
+          <span className="homethanks">THANKS</span>
+          <span className="homegiving">GIVING</span>
           <img
             src={information}
             alt="ReadMe"
-            className="home__button-information"
+            className="homebutton-information"
             onClick={handleReadMoreClick}
           />
           {isParagraphVisible && (
@@ -110,7 +103,6 @@ function Home() {
           )}
         </div>
       </div>
-      {/* <TopDish /> */}
       <Footer />
     </div>
   );
