@@ -4,7 +4,7 @@ import "./SideBar.css";
 
 function SideBar() {
     const [guest, setGuest] = useState("");
-    const [guestList, setGuestList] = useState([]);  // Initialize guestList state
+    const [guestList, setGuestList] = useState([]);
     
     const handleGuestChange = (e) => {
         setGuest(e.target.value);
