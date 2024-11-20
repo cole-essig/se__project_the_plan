@@ -4,15 +4,125 @@
   position: relative;
 }
 
-.home__title {
+.home__arrow {
+  position: absolute;
+  height: 116px;
+  width: 111px;
+  right: 69px;
+  top: -34px;
+  animation: pulse 3s infinite;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+.home__header {
   color: #fff;
-  font-size: 40px;
-  margin: 15px auto;
+  font-size: 30px;
+  /* margin: 170px auto; */
+  align-items: right;
 }
 
-.home__create-meal-button {
-    max-width: 100px;
-    margin: 0 auto;
-    background: transparent;
-    cursor: pointer;
+.home__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 22px;
+  gap: 10px;
+}
+
+.home__middle {
+  display: flex;
+  justify-content: space-between;
+  height: 100%; /* Optional: Ensure it fills the available space */
+  width: 100%; /* Optional: Ensure it spans full width */
+  position: relative; /* Ensures alignment context */
+  align-items: center;
+}
+
+.home__thanks,
+.home__giving {
+  font-size: 95px; /* Larger font size for "THANKS" and "GIVING" */
+  font-weight: 700; /* Bold font weight */
+  color: #000; /* Black color */
+}
+
+.home__button-recipe {
+  /* margin: 20px 10px 0px 0px; */
+  cursor: pointer;
+  background-color: #af2000;
+  width: 190px;
+  height: 60px;
+}
+
+.home__button-information {
+  cursor: pointer;
+}
+
+.home__myrecipe {
+  /* margin: 20px 10px 0px 0px; */
+  width: 87px;
+  height: 77px;
+}
+
+.home__items {
+  align-content: center;
+  margin-top: 80px;
+}
+.home__food {
+  width: 827px;
+  height: 501px;
+}
+
+.home__shelf {
+  width: 787px;
+  height: 200px;
+  /* background: linear-gradient(180deg, #d24125, #f78a42),
+    url("../../assets//img/Thanksgiving_shelf.png") no-repeat center/cover; */
+  background-blend-mode: overlay;
+  border: none;
+  align-content: center;
+  margin-top: -42px;
+}
+
+.home__nav-recipes {
+  gap: 35px;
+  display: flex;
+  margin: 0px;
+}
+
+.home__paragraph {
+  color: #fff;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0px;
+  /* margin: 22px 34px 0px; */
+  display: flex;
+  gap: 91px;
+  gap: 120px;
+  margin-left: 90px;
+}
+
+.nav__link {
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: #fff;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(-90deg);
+  }
 }
