@@ -15,12 +15,19 @@ function About() {
       </Link>
       <div className="about__content">
         <h2 className="about__title">About This Project</h2>
-        <p className="about__text">Planning for Thanksgiving has never been easier or more fun! 
-            Our platform helps you effortlessly organize the big day by tracking portions, guest lists, and who's bringing what. 
-            We even provide links to delicious recipes, so you can plan ahead and make sure every dish is a hit.
-            In the future, we’re excited to offer custom logins, personalized tracking, anonymous dish reviews after the celebration, 
-            and even a calorie tracker for those mindful of their intake. Let us help you make your Thanksgiving memorable and stress-free!
-            Check out the creators in the the footer below!
+        <p className="about__text">
+          Planning for Thanksgiving has never been easier or more fun! 
+          Our platform helps you effortlessly organize the big day by tracking portions, guest lists, and who's bringing what. 
+          We even provide links to delicious recipes, so you can plan ahead and make sure every dish is a hit.
+
+          In the future, we’re excited to introduce even more features to take your Thanksgiving planning to the next level! 
+          Soon, you'll be able to track your guests' allergies and dietary preferences to ensure everyone can enjoy a safe and delicious meal. 
+          You’ll also be able to manage total servings and portions more effectively, helping you avoid food waste while ensuring no one leaves hungry.
+          We’re also working on a new feature that lets you create multiple meal plans with unique key instances, so you can offer different options and let your guests vote on their favorites. 
+          Plus, custom logins and personalized tracking will make your planning even smoother. After the event, we’ll introduce anonymous dish reviews, so you can get honest feedback on every recipe. 
+          For those mindful of their intake, a calorie tracker will be available to keep things healthy without compromising on flavor.
+          Let us help you make your Thanksgiving memorable, stress-free, and perfectly tailored to your guests’ needs!
+          Check out the creators in the footer below!
         </p>
       </div>
       <Footer />
