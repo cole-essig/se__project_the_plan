@@ -4,7 +4,7 @@ import "./Guest.css"
 function Guest({guest}) {
 return (
     <div>
-        <p>{guest}</p>
+        <p className="guest__name">{`-${guest}`}</p>
     </div>
 )
 }

@@ -17,10 +17,11 @@ function SideBar() {
             setGuest("");  
         }
     };
-
+    let total = (guestList.length);
+    console.log(total);
     return (
         <div className="sidebar">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="sidebar__form">
                 <label htmlFor="guest" className="sidebar__label">
                     Guest Name
                     <input
@@ -32,13 +33,14 @@ function SideBar() {
                         onChange={handleGuestChange}
                     />
                 </label>
-                <button type="submit" className="sidebar__button">+</button>
+                <button type="submit" className="sidebar__button"> Add+</button>
             </form>
                 <ul className="sidebar__guest_list">
                     {guestList.map((guest, index) => (
                         <Guest key={index} guest={guest} /> 
                     ))}
                 </ul>
+                <p className="sidebar__total">{`Total People is ${total}`}</p>
         </div>
     );
 }

@@ -1,8 +1,8 @@
 .recipes {
     margin: 0 auto 0;
     display: flex;
-    flex-direction: column;
-    max-width: 70vw;
+    flex-direction: row;
+    max-width: 80vw;
     width: 100%;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .recipes__button:hover {
-    box-shadow: 10px 10px 8px red;
+    box-shadow: 5px 1px 10px 8px #fff;
 }
 
 .recipes__cards_list {
