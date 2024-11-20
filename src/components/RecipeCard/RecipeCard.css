@@ -8,6 +8,22 @@
     background-color: #f8b12c;
 }
 
+.card__pin {
+  max-width: 45px;
+  width: 100%;
+  min-height: 45px;
+  position: absolute;
+  left: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.25s, opacity 0.25s linear;
+}
+
+.card__pin_open {
+  visibility: visible;
+  opacity: 1;
+}
+
 .card:hover {
   box-shadow: 10px 10px 8px #fff;
 }
