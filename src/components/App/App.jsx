@@ -1,12 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import Register from "../Register/Register";
 import JoinPlan from "../JoinPlan/JoinPlan";
 import CreatePlan from '../CreatePlan/CreatePlan';
-import Review from "../Review/Review";
 import Home from "../Home/Home"
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute"
 import AppContext from '../../context/AppContext';
@@ -35,14 +32,6 @@ function App() {
             element={
               <ProtectedRoute anonymous>
                 <CreatePlan />
-              </ProtectedRoute>
-            } 
-          />
-          <Route 
-            path="/home/review" 
-            element={
-              <ProtectedRoute anonymous>
-                <Review />
               </ProtectedRoute>
             } 
           />
