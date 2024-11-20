@@ -1,13 +1,14 @@
 .footer {
-margin: 60px auto 0;
-display: flex;
-flex-direction: column;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__head {
-display: flex;
-border-bottom: 1px #000;
-margin: 0 auto 0;
+  max-width: 100%;
+  display: flex;
+  border-bottom: 1px #000;
+  margin: 0 auto 0;
 }
 
 .footer__logo {
@@ -30,7 +31,7 @@ margin: 0 auto 0;
 }
 
 .footer__link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer__navigation {
@@ -64,17 +65,17 @@ margin: 0 auto 0;
 }
 
 .footer__popup_cole {
-    position: relative;
-    max-width: 150px;
-    width: 100%;
-    height: 100px;
-    background-color: azure;
-    border-radius: 50%;
-    position: absolute;
-    left: 50px;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.25s, opacity 0.25s linear;
+  position: relative;
+  max-width: 150px;
+  width: 100%;
+  height: 100px;
+  background-color: azure;
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.25s, opacity 0.25s linear;
 }
 
 .footer__popup_bj {
@@ -92,11 +93,11 @@ margin: 0 auto 0;
 }
 
 .footer__picture {
-    max-width: 150px;
-    width: 100%;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 4px 0px 8px #000;
+  max-width: 150px;
+  width: 100%;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 4px 0px 8px #000;
 }
 
 .footer__popup-text {
@@ -124,4 +125,5 @@ margin: 0 auto 0;
 .footer__copyright {
   color: #000;
   margin: 15px auto 0;
+  font-weight: 600;
 }

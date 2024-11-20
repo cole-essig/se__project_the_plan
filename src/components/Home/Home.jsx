@@ -51,7 +51,7 @@ function Home() {
             src={Recipes}
             alt="Recipe"
             className="home__button-recipe"
-            onClick={onClick}
+            // onClick={onClick}
           />
           <img
             src={recipes}
