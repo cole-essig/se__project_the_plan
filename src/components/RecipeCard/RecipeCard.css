@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    position: relative;
+    max-width: 175px;
+    width: 100%;
+    min-height: 175px;
+    border-radius: 15px;
+    background-color: #f8b12c;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 8px red;
+}
+
+.card__name {
+  margin: auto;
+  font-size: 25px;
+  top: 60px;
+  left: 55px;
+}
+
+.card__servings {
+  position: absolute;
+  margin: 0;
+  bottom: 2px;
+  left: 55px;
+}
