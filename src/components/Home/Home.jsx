@@ -29,11 +29,11 @@ function Home() {
   return (
     <div className="home">
       <nav className="nav">
-        <ul className="nav-links">
+        <ul className="nav__links">
           <li>
             <Link
               to="/home"
-              className="navlink"
+              className="nav__link"
             >
               Home
             </Link>
@@ -41,7 +41,7 @@ function Home() {
           <li>
             <Link
               to="/home/about"
-              className="navlink"
+              className="nav__link"
             >
               About
             </Link>
@@ -49,41 +49,41 @@ function Home() {
           <li>
             <Link
               to="/home/recipes"
-              className="navlink"
+              className="nav__link"
             >
               Recipes
             </Link>
           </li>
         </ul>
-        <ul className="homenav-recipes">
+        <ul className="home__nav-recipes">
           <img
             src={Recipes}
             alt="Recipe"
-            className="homebutton-recipe"
+            className="home__button-recipe"
             onClick={onClick}
           />
           <img
             src={recipes}
             alt="myrecipes"
-            className="homebutton-myrecipe"
+            className="home__button-myrecipe"
             // onClick={onClick}
           />
         </ul>
       </nav>
-      <div className="homemiddle">
-        <img src={arrow} alt="arrow" className="homearrow" />
-        <div className="homeitems">
-          <img src={dinner} alt="food" className="homefood" />
-          <img src={bench} alt="shelf" className="homeshelf" />
+      <div className="home__middle">
+        <img src={arrow} alt="arrow" className="home__arrow" />
+        <div className="home__items">
+          <img src={dinner} alt="food" className="home__food" />
+          <img src={bench} alt="shelf" className="home__shelf" />
         </div>
-        <div className="hometext">
-          <h3 className="homeheader">THANKSGIVING DAY</h3>
-          <span className="homethanks">THANKS</span>
-          <span className="homegiving">GIVING</span>
+        <div className="home__text">
+          <h3 className="home__header">THANKSGIVING DAY</h3>
+          <span className="home__thanks">THANKS</span>
+          <span className="home__giving">GIVING</span>
           <img
             src={information}
             alt="ReadMe"
-            className="homebutton-information"
+            className="home__button-information"
             onClick={handleReadMoreClick}
           />
           {isParagraphVisible && (
