@@ -4,6 +4,16 @@
   position: relative;
 }
 
+.home__arrow {
+  position: absolute;
+  height: 116px;
+  width: 111px;
+  right: 69px;
+  top: -34px;
+  animation: pulse 3s infinite;
+  margin-right: 100px;
+  margin-top: 50px;
+}
 .home__header {
   color: #fff;
   font-size: 30px;
@@ -79,6 +89,10 @@
   display: flex;
   margin: 0px;
 }
+
+.home__paragraph {
+  color: #fff;
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -101,4 +115,14 @@
 .nav__link:hover {
   color: #fff;
   z-index: 1;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(-90deg);
+  }
 }

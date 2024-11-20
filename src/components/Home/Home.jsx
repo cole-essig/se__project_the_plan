@@ -10,6 +10,7 @@ import recipes from "../../assets/img/ThanksGiving_recipes.png";
 import Recipes from "../../assets/img/ThanksGiving_button-Re.png";
 import bench from "../../assets/img/BENCH.svg";
 import information from "../../assets/img/ThanksGiving_button-information.png";
+import arrow from "../../assets/img/arrow.svg";
 import { Nav } from "react-bootstrap";
 
 function Home() {
@@ -17,8 +18,14 @@ function Home() {
     console.log("hey");
   };
 
-  const handleClick = () => {
-    console.log("Styled image button clicked!");
+  // const handleClick = () => {
+  //   console.log("Styled image button clicked!");
+  // };
+
+  const [isParagraphVisible, setIsParagraphVisible] = useState(false);
+
+  const handleReadMoreClick = () => {
+    setIsParagraphVisible((prev) => !prev);
   };
 
   return (
@@ -50,7 +57,7 @@ function Home() {
               className="nav__link"
               activeClassName="Home__active-link"
             >
-              create contact
+              register
             </Nav>
           </li>
           <li>
@@ -74,11 +81,12 @@ function Home() {
             src={recipes}
             alt="my__recipes"
             className="home__button-myrecipe"
-            onClick={onClick}
+            // onClick={onClick}
           />
         </ul>
       </nav>
       <div className="home__middle">
+        <img src={arrow} alt="arrow" className="home__arrow" />
         <div className="home__items">
           <img src={dinner} alt="food" className="home__food" />
           <img src={bench} alt="shelf" className="home__shelf" />
@@ -91,8 +99,15 @@ function Home() {
             src={information}
             alt="ReadMe"
             className="home__button-information"
-            handleClick={handleClick}
+            onClick={handleReadMoreClick}
           />
+          {isParagraphVisible && (
+            <p className="home__paragraph">
+              Thanksgiving is a time to gather with loved ones, enjoy delicious
+              meals, and reflect on the blessings of the past year. Celebrate
+              the holiday with gratitude and joy!
+            </p>
+          )}
         </div>
       </div>
       {/* <TopDish /> */}
