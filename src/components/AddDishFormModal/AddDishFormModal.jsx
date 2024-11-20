@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./AddDishForm.css";
+import "./AddDishFormModal.css";
 
-function AddDishForm({ onAddItem }) {
+function AddDishForm({ onAddItem, handleModalClose, isOpen }) {
     const [dish, setDish] = useState('');
     const handleDishChange = (e) => {
         setDish(e.target.value);
@@ -27,8 +27,9 @@ function AddDishForm({ onAddItem }) {
     }
 
     return (
-        <div className="addDish">
+        <div className={`addDish ${isOpen ? "modal_opened" : ""}`}>
             <div className="addDish__form">
+            <button type='button' className='addDish__delete-button' onClick={handleModalClose}></button>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor='dish' className='addDish__label'>
                         Dish Name
