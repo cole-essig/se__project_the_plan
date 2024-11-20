@@ -5,6 +5,9 @@ import "./About.css"
 function About() {
   return (
     <div className="about">
+      <Link to="/home" className="about__home-link">
+        <image alt="home icon" className="about__home-image" />
+      </Link>
       <div className="about__content">
         <h2 className="about__title">About This Project</h2>
         <p className="about__text">Planning for Thanksgiving has never been easier or more fun! 

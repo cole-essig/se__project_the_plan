@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import AddDishForm from "../AddDishFormModal/AddDishFormModal";
 import Recipes from "../Recipes/Recipes";
 import Footer from "../Footer/Footer";
@@ -32,6 +33,9 @@ function CreatePlan() {
 
 return (
     <div className="createPlans">
+      <Link to="/home" className="createPlans__home-link">
+        <image alt="home icon" className="createPlans__home-image" />
+      </Link>
       <Recipes recipeList={recipeList} cardDelete={cardDelete} handleAddClick={handleAddClick} />
       <Footer />
       {activeModal === 'add' && <AddDishForm onAddItem={onAddItem} handleModalClose={closeActiveModal} isOpen={activeModal === 'add'} />}

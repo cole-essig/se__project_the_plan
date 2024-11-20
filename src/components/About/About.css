@@ -1,6 +1,17 @@
 .about__content {
     display: flex;
+    position: relative;
     flex-direction: column;
+}
+
+.about__home-link {
+  position: absolute;
+}
+
+.about__home-image {
+  max-width: 75px;
+  width: 100%;
+  min-height: 75px;
 }
 
 .about__title {
