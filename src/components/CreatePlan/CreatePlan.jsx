@@ -12,6 +12,10 @@ function CreatePlan() {
        setRecipeList([{dish: dish, servings: serving, url: link, id: Math.random()}, ...recipeList]);
     }
 
+    const cardDelete = (Id) => {
+        setRecipeList(recipeList.filter(item => item.id !== Id))
+    }
+
     useEffect(() => {
         setRecipeList(startingRecipes);
     }, []);
@@ -19,7 +23,7 @@ function CreatePlan() {
 return (
     <>
       <AddDishForm onAddItem={onAddItem} />
-      <Recipes recipeList={recipeList}/>
+      <Recipes recipeList={recipeList} cardDelete={cardDelete}/>
       <Footer />
     </>
 )

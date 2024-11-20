@@ -12,6 +12,21 @@
   box-shadow: 10px 10px 8px red;
 }
 
+.card__delete {
+  position: absolute;
+    cursor: pointer;
+    background-image: url(../../assets/delete-button.svg);
+    border: none;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0;
+    top: 10px;
+    right: 10px;
+}
+
 .card__name {
   margin: auto;
   font-size: 25px;
