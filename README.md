@@ -1,4 +1,4 @@
-# 🦃 Thanksgiving Recipe Planner
+# 🦃 The Recipe Of Thanks
 ## 📖 Project Overview
 * We are creating a Thanksgiving-themed interactive recipe page to make holiday planning stress-free and enjoyable. The platform allows users to explore curated Thanksgiving recipes, customize meal plans for their guest list, and create an interactive and personalized experience. This festive platform captures the essence of Thanksgiving, making it a memorable experience for everyone.
 
