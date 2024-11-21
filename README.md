@@ -32,6 +32,9 @@
 ## 📂 Project Structure
 * The project is organized using the BEM (Block, Element, Modifier) methodology, ensuring that the codebase is scalable and maintainable. The file structure is straightforward, making it easy for other developers to contribute and extend the project.
 
+* figma
+https://www.figma.com/design/HGzcvnPRLOKppajzN33nFy/Untitled?node-id=2-2&node-type=frame&t=Y1rYqpEMy4BLYden-0
+
 ## 🔗 Live Project
 * https://cole-essig.github.io/se__project_the_plan/
 
