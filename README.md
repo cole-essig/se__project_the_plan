@@ -31,7 +31,9 @@
 
 ## 📂 Project Structure
 * The project is organized using the BEM (Block, Element, Modifier) methodology, ensuring that the codebase is scalable and maintainable. The file structure is straightforward, making it easy for other developers to contribute and extend the project.
-🔗 Live Project
+
+## 🔗 Live Project
+* https://cole-essig.github.io/se__project_the_plan/
 
 👥 Contributors
 * cole-essign
