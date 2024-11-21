@@ -1,4 +1,4 @@
-# 🦃 Thanksgiving Recipe Planner
+# 🦃 The Recipe Of Thanks
 ## 📖 Project Overview
 * We are creating a Thanksgiving-themed interactive recipe page to make holiday planning stress-free and enjoyable. The platform allows users to explore curated Thanksgiving recipes, customize meal plans for their guest list, and create an interactive and personalized experience. This festive platform captures the essence of Thanksgiving, making it a memorable experience for everyone.
 
@@ -32,8 +32,10 @@
 ## 📂 Project Structure
 * The project is organized using the BEM (Block, Element, Modifier) methodology, ensuring that the codebase is scalable and maintainable. The file structure is straightforward, making it easy for other developers to contribute and extend the project.
 
-## 🔗 Live Project
+
+## 🔗 Live Project and Figma
 * https://cole-essig.github.io/se__project_the_plan/
+* https://www.figma.com/design/HGzcvnPRLOKppajzN33nFy/Untitled?node-id=2-2&node-type=frame&t=Y1rYqpEMy4BLYden-0
 
 👥 Contributors
 * cole-essign
